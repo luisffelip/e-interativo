@@ -1,0 +1,20 @@
+[0;1;32m●[0m gunicorn.service - Gunicorn instance to serve e-interativo.com.br
+     Loaded: loaded (]8;;file://srv702541/etc/systemd/system/gunicorn.service/etc/systemd/system/gunicorn.service]8;;; [0;1;32menabled[0m; preset: [0;1;32menabled[0m)
+     Active: [0;1;32mactive (running)[0m since Sun 2025-04-13 13:51:20 UTC; 5s ago
+   Main PID: 559473 (gunicorn)
+      Tasks: 7 (limit: 9485)
+     Memory: 166.3M (peak: 166.6M)
+        CPU: 1.534s
+     CGroup: /system.slice/gunicorn.service
+             ├─[0;38;5;245m559473 /home/e-interativo.com.br/venv/bin/python3 /home/e-interativo.com.br/venv/bin/gunicorn --workers 3 --bind unix:/home/e-interativo.com.br/e-interativo.sock -m 007 wsgi:app[0m
+             ├─[0;38;5;245m559475 /home/e-interativo.com.br/venv/bin/python3 /home/e-interativo.com.br/venv/bin/gunicorn --workers 3 --bind unix:/home/e-interativo.com.br/e-interativo.sock -m 007 wsgi:app[0m
+             ├─[0;38;5;245m559476 /home/e-interativo.com.br/venv/bin/python3 /home/e-interativo.com.br/venv/bin/gunicorn --workers 3 --bind unix:/home/e-interativo.com.br/e-interativo.sock -m 007 wsgi:app[0m
+             └─[0;38;5;245m559478 /home/e-interativo.com.br/venv/bin/python3 /home/e-interativo.com.br/venv/bin/gunicorn --workers 3 --bind unix:/home/e-interativo.com.br/e-interativo.sock -m 007 wsgi:app[0m
+
+Apr 13 13:51:20 srv702541 systemd[1]: Started gunicorn.service - Gunicorn instance to serve e-interativo.com.br.
+Apr 13 13:51:20 srv702541 gunicorn[559473]: [2025-04-13 13:51:20 +0000] [559473] [INFO] Starting gunicorn 23.0.0
+Apr 13 13:51:20 srv702541 gunicorn[559473]: [2025-04-13 13:51:20 +0000] [559473] [INFO] Listening at: unix:/home/e-interativo.com.br/e-interativo.sock (559473)
+Apr 13 13:51:20 srv702541 gunicorn[559473]: [2025-04-13 13:51:20 +0000] [559473] [INFO] Using worker: sync
+Apr 13 13:51:20 srv702541 gunicorn[559475]: [2025-04-13 13:51:20 +0000] [559475] [INFO] Booting worker with pid: 559475
+Apr 13 13:51:20 srv702541 gunicorn[559476]: [2025-04-13 13:51:20 +0000] [559476] [INFO] Booting worker with pid: 559476
+Apr 13 13:51:20 srv702541 gunicorn[559478]: [2025-04-13 13:51:20 +0000] [559478] [INFO] Booting worker with pid: 559478

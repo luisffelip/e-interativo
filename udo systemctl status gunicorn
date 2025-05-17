@@ -1,0 +1,21 @@
+[0;1;32m●[0m nginx.service - A high performance web server and a reverse proxy server
+     Loaded: loaded (]8;;file://srv702541/usr/lib/systemd/system/nginx.service/usr/lib/systemd/system/nginx.service]8;;; [0;1;32menabled[0m; preset: [0;1;32menabled[0m)
+     Active: [0;1;32mactive (running)[0m since Sun 2025-04-13 13:04:38 UTC; 1min 13s ago
+       Docs: ]8;;man:nginx(8)man:nginx(8)]8;;
+   Main PID: 558375 (nginx)
+      Tasks: 3 (limit: 9485)
+     Memory: 2.4M (peak: 2.7M)
+        CPU: 15ms
+     CGroup: /system.slice/nginx.service
+             ├─[0;38;5;245m558375 "nginx: master process /usr/sbin/nginx -g daemon on; master_process on;"[0m
+             ├─[0;38;5;245m558377 "nginx: worker process"[0m
+             └─[0;38;5;245m558378 "nginx: worker process"[0m
+
+Apr 13 13:04:38 srv702541 systemd[1]: Starting nginx.service - A high performance web server and a reverse proxy server...
+Apr 13 13:04:38 srv702541 nginx[558372]: 2025/04/13 13:04:38 [warn] 558372#558372: conflicting server name "e-interativo.com.br" on 0.0.0.0:80, ignored
+Apr 13 13:04:38 srv702541 nginx[558372]: 2025/04/13 13:04:38 [warn] 558372#558372: conflicting server name "www.e-interativo.com.br" on 0.0.0.0:80, ignored
+Apr 13 13:04:38 srv702541 nginx[558372]: 2025/04/13 13:04:38 [warn] 558372#558372: conflicting server name "e-interativo.com.br" on 0.0.0.0:80, ignored
+Apr 13 13:04:38 srv702541 nginx[558374]: 2025/04/13 13:04:38 [warn] 558374#558374: conflicting server name "e-interativo.com.br" on 0.0.0.0:80, ignored
+Apr 13 13:04:38 srv702541 nginx[558374]: 2025/04/13 13:04:38 [warn] 558374#558374: conflicting server name "www.e-interativo.com.br" on 0.0.0.0:80, ignored
+Apr 13 13:04:38 srv702541 nginx[558374]: 2025/04/13 13:04:38 [warn] 558374#558374: conflicting server name "e-interativo.com.br" on 0.0.0.0:80, ignored
+Apr 13 13:04:38 srv702541 systemd[1]: Started nginx.service - A high performance web server and a reverse proxy server.

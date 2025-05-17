@@ -1,0 +1,96 @@
+[2025-04-13 16:20:01 +0000] [1881] [INFO] Starting gunicorn 23.0.0
+[2025-04-13 16:20:01 +0000] [1881] [INFO] Listening at: http://127.0.0.1:5000 (1881)
+[2025-04-13 16:20:01 +0000] [1881] [INFO] Using worker: sync
+[2025-04-13 16:20:01 +0000] [1885] [INFO] Booting worker with pid: 1885
+[2025-04-13 16:25:34 +0000] [1897] [INFO] Starting gunicorn 23.0.0
+[2025-04-13 16:25:34 +0000] [1897] [INFO] Listening at: unix:/home/e-interativo.com.br/e-interativo.sock (1897)
+[2025-04-13 16:25:34 +0000] [1897] [INFO] Using worker: sync
+[2025-04-13 16:25:34 +0000] [1898] [INFO] Booting worker with pid: 1898
+[2025-04-13 16:25:34 +0000] [1899] [INFO] Booting worker with pid: 1899
+[2025-04-13 16:25:34 +0000] [1900] [INFO] Booting worker with pid: 1900
+[2025-04-13 16:25:34 +0000] [1902] [INFO] Booting worker with pid: 1902
+[2025-04-13 16:35:49 +0000] [2007] [INFO] Starting gunicorn 23.0.0
+[2025-04-13 16:35:49 +0000] [2007] [INFO] Listening at: unix:/home/e-interativo.com.br/e-interativo.sock (2007)
+[2025-04-13 16:35:49 +0000] [2007] [INFO] Using worker: sync
+[2025-04-13 16:35:49 +0000] [2008] [INFO] Booting worker with pid: 2008
+[2025-04-13 16:35:49 +0000] [2009] [INFO] Booting worker with pid: 2009
+[2025-04-13 16:35:49 +0000] [2010] [INFO] Booting worker with pid: 2010
+[2025-04-13 16:35:50 +0000] [2012] [INFO] Booting worker with pid: 2012
+[2025-04-13 16:40:58 +0000] [2008] [INFO] Worker exiting (pid: 2008)
+[2025-04-13 16:40:58 +0000] [2010] [INFO] Worker exiting (pid: 2010)
+[2025-04-13 16:40:58 +0000] [2012] [INFO] Worker exiting (pid: 2012)
+[2025-04-13 16:40:58 +0000] [2007] [INFO] Handling signal: term
+[2025-04-13 16:40:58 +0000] [2009] [INFO] Worker exiting (pid: 2009)
+[2025-04-13 16:40:58 +0000] [1897] [INFO] Handling signal: term
+Traceback (most recent call last):
+  File "/home/e-interativo.com.br/venv/lib/python3.12/site-packages/gunicorn/arbiter.py", line 223, in run
+    handler()
+  File "/home/e-interativo.com.br/venv/lib/python3.12/site-packages/gunicorn/arbiter.py", line 256, in handle_term
+    raise StopIteration
+StopIteration
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/e-interativo.com.br/venv/bin/gunicorn", line 8, in <module>
+    sys.exit(run())
+             ^^^^^
+  File "/home/e-interativo.com.br/venv/lib/python3.12/site-packages/gunicorn/app/wsgiapp.py", line 66, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]", prog=prog).run()
+  File "/home/e-interativo.com.br/venv/lib/python3.12/site-packages/gunicorn/app/base.py", line 235, in run
+    super().run()
+  File "/home/e-interativo.com.br/venv/lib/python3.12/site-packages/gunicorn/app/base.py", line 71, in run
+    Arbiter(self).run()
+  File "/home/e-interativo.com.br/venv/lib/python3.12/site-packages/gunicorn/arbiter.py", line 226, in run
+    self.halt()
+  File "/home/e-interativo.com.br/venv/lib/python3.12/site-packages/gunicorn/arbiter.py", line 341, in halt
+    self.stop()
+  File "/home/e-interativo.com.br/venv/lib/python3.12/site-packages/gunicorn/arbiter.py", line 384, in stop
+    sock.close_sockets(self.LISTENERS, unlink)
+  File "/home/e-interativo.com.br/venv/lib/python3.12/site-packages/gunicorn/sock.py", line 212, in close_sockets
+    os.unlink(sock_name)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/e-interativo.com.br/e-interativo.sock'
+[2025-04-13 16:40:58 +0000] [1898] [INFO] Worker exiting (pid: 1898)
+[2025-04-13 16:40:58 +0000] [1899] [INFO] Worker exiting (pid: 1899)
+[2025-04-13 16:40:58 +0000] [1900] [INFO] Worker exiting (pid: 1900)
+[2025-04-13 16:40:58 +0000] [1902] [INFO] Worker exiting (pid: 1902)
+[2025-04-13 16:40:58 +0000] [1881] [INFO] Handling signal: term
+[2025-04-13 16:40:58 +0000] [1885] [INFO] Worker exiting (pid: 1885)
+[2025-04-13 16:40:59 +0000] [2100] [INFO] Starting gunicorn 23.0.0
+[2025-04-13 16:40:59 +0000] [2100] [INFO] Listening at: unix:/home/e-interativo.com.br/e-interativo.sock (2100)
+[2025-04-13 16:40:59 +0000] [2100] [INFO] Using worker: sync
+[2025-04-13 16:40:59 +0000] [2101] [INFO] Booting worker with pid: 2101
+[2025-04-13 16:40:59 +0000] [2102] [INFO] Booting worker with pid: 2102
+[2025-04-13 16:40:59 +0000] [2103] [INFO] Booting worker with pid: 2103
+[2025-04-13 16:40:59 +0000] [2104] [INFO] Booting worker with pid: 2104
+[2025-04-13 16:40:59 +0000] [2007] [INFO] Shutting down: Master
+[2025-04-13 16:41:03 +0000] [1881] [INFO] Shutting down: Master
+[2025-04-13 16:56:32 +0000] [2100] [INFO] Handling signal: hup
+[2025-04-13 16:56:32 +0000] [2100] [INFO] Hang up: Master
+[2025-04-13 16:56:32 +0000] [2100] [ERROR] Worker (pid:2101) was sent SIGHUP!
+[2025-04-13 16:56:32 +0000] [2100] [ERROR] Worker (pid:2102) was sent SIGHUP!
+[2025-04-13 16:56:32 +0000] [2100] [ERROR] Worker (pid:2103) was sent SIGHUP!
+[2025-04-13 16:56:32 +0000] [2100] [ERROR] Worker (pid:2104) was sent SIGHUP!
+[2025-04-13 16:56:32 +0000] [2216] [INFO] Booting worker with pid: 2216
+[2025-04-13 16:56:32 +0000] [2100] [INFO] Handling signal: term
+[2025-04-13 16:56:32 +0000] [2214] [INFO] Booting worker with pid: 2214
+[2025-04-13 16:56:32 +0000] [2215] [INFO] Booting worker with pid: 2215
+[2025-04-13 16:56:32 +0000] [2217] [INFO] Booting worker with pid: 2217
+[2025-04-13 16:57:02 +0000] [2100] [INFO] Shutting down: Master
+[2025-04-13 17:01:14 +0000] [1028] [INFO] Starting gunicorn 23.0.0
+[2025-04-13 17:01:14 +0000] [1028] [INFO] Listening at: unix:/home/e-interativo.com.br/e-interativo.sock (1028)
+[2025-04-13 17:01:14 +0000] [1028] [INFO] Using worker: sync
+[2025-04-13 17:01:14 +0000] [1029] [INFO] Booting worker with pid: 1029
+[2025-04-13 17:01:14 +0000] [1030] [INFO] Booting worker with pid: 1030
+[2025-04-13 17:01:14 +0000] [1031] [INFO] Booting worker with pid: 1031
+[2025-04-13 17:01:14 +0000] [1032] [INFO] Booting worker with pid: 1032
+[2025-04-13 17:40:15 +0000] [1028] [INFO] Handling signal: hup
+[2025-04-13 17:40:15 +0000] [1028] [INFO] Hang up: Master
+[2025-04-13 17:40:15 +0000] [1028] [ERROR] Worker (pid:1029) was sent SIGHUP!
+[2025-04-13 17:40:15 +0000] [1028] [ERROR] Worker (pid:1030) was sent SIGHUP!
+[2025-04-13 17:40:15 +0000] [1028] [ERROR] Worker (pid:1031) was sent SIGHUP!
+[2025-04-13 17:40:15 +0000] [1028] [ERROR] Worker (pid:1032) was sent SIGHUP!
+[2025-04-13 17:40:15 +0000] [1299] [INFO] Booting worker with pid: 1299
+[2025-04-13 17:40:15 +0000] [1300] [INFO] Booting worker with pid: 1300
+[2025-04-13 17:40:15 +0000] [1301] [INFO] Booting worker with pid: 1301
+[2025-04-13 17:40:15 +0000] [1302] [INFO] Booting worker with pid: 1302

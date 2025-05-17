@@ -1,0 +1,15 @@
+server {
+    listen 80;
+    server_name e-interativo.com.br;  # Coloque seu domínio aqui
+
+    location / {
+        proxy_pass http://unix:/home/e-interativo.com.br/e-interativo.sock;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+
+    error_log /var/log/nginx/error.log;
+    access_log /var/log/nginx/access.log;
+}
